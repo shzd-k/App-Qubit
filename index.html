@@ -1,13 +1,38 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> shzd </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <script defer src="main.js"></script>
-    <button class="dwnld"> Soon ! </button>
+    <nav>
+        <h1> shzd </h1>
+        <ul>
+            <li> About </li>
+            <li> Contact  </li>
+            <li> Download   </li>
+        </ul>
+        <h1 id="Back"> . .   </h1>
+    </nav>
+    <div class="app">
+        <img src="static/logo.png" alt="logo">
+        <h1>
+            SHXQ <br>
+            <p style="font-size: 35%; filter: brightness(50%);" class="disc"> Clock </p>
+        </h1>
+        <button id="btn_download"> Download </button>
+    </div>
+    <script>
+        document.getElementById('btn_download').addEventListener('click' , () => {
+            var a = document.createElement('a')
+            a.href = 'shgjhkgfjhgfjhgfjhgfjhgfjgfhfhgfhg.apk'
+            a.download = "shxq.apk"
+            document.body.appendChild(a)
+            a.click()
+            document.body.removeChild(a)
+        })
+    </script>
 </body>
 </html>
